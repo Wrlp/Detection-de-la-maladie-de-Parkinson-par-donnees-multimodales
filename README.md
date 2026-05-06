@@ -1,1 +1,1 @@
-# D-tection-de-la-maladie-de-Parkinson-par-donn-es-multimodales
+# Detection-de-la-maladie-de-Parkinson-par-donnees-multimodales
