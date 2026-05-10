@@ -1,0 +1,678 @@
+{
+  "files": {
+    "data/raw/spiral_uci/hw_dataset/control/C_0001.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0002.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0004.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0005.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0006.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0007.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0008.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0009.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0010.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0011.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0012.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0013.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0014.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/control/C_0015.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 0
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_02100001.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_02100002.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_05060003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_05060004.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_09100001.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_09100003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_09100005.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_11120003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_11120004.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_11120005.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_12060001.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_12060002.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_16100003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_16100004.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_23100002.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_23100003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_26060001.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_26060002.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_26060003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_26060006.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_26060007.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_27110001.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_27110003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_30100001.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/hw_dataset/parkinson/P_30100002.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0001.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0002.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0003.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0004.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0007.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0008.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0011.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0012.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0013.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0014.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0015.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0016.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0019.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0020.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0021.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0022.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0023.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0024.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0025.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0029.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0030.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0031.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0032.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0033.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0034.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0035.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0036.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0037.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0039.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_P000-0040.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_p000-0010.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_p000-0017.txt": {
+      "issues": [],
+      "present_tests": [
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_p000-0018.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_p000-0028.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_p000-0041.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_p000-0042.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    },
+    "data/raw/spiral_uci/new_dataset/parkinson/H_p000-0043.txt": {
+      "issues": [],
+      "present_tests": [
+        0,
+        1,
+        2
+      ],
+      "label": 1
+    }
+  },
+  "warnings": [],
+  "missing_tests_counts": {
+    "sst": 1,
+    "dst": 5,
+    "stcp": 23
+  },
+  "n_subjects": 77,
+  "n_pd": 62,
+  "n_hc": 15,
+  "class_ratio_pd": 0.8051948051948052
+}

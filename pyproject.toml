@@ -1,0 +1,14 @@
+[project]
+name = "detection-de-la-maladie-de-parkinson-par-donnees-multimodales"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "scikit-image>=0.22",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.11",
+    "seaborn>=0.13",
+    "ucimlrepo>=0.0.7",
+]

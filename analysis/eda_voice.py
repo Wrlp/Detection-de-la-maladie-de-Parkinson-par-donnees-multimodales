@@ -11,8 +11,10 @@ from sklearn.model_selection import train_test_split
 
 from ucimlrepo import fetch_ucirepo
 
-
-OUTPUT_DIR = Path("reports") / "figures"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# Même arborescence que eda_spiral_uci.py (`reports/figures`), sous-dossier dédié.
+FIGURES_BASE = PROJECT_ROOT / "reports" / "figures"
+OUTPUT_DIR = FIGURES_BASE / "voice"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
