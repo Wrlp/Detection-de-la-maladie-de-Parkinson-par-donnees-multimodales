@@ -28,6 +28,10 @@ SPIRAL_CSV   = PROJECT_ROOT / "reports" / "figures" / "spiral_uci" / "features_p
 OUT_DIR      = PROJECT_ROOT / "reports" / "figures"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
+import sys
+sys.path.append(str(PROJECT_ROOT))
+from voice_loader import load_voice_data
+
 # Features à utiliser
 VOICE_FEATS = [
     "HNR", "RPDE", "DFA", "PPE",
@@ -36,25 +40,13 @@ VOICE_FEATS = [
     "age", "sex", "test_time",
 ]
 
-VOICE_CSV = PROJECT_ROOT / "reports" / "figures" / "voice" / "features_per_subject_voice.csv"
-
 def load_voice() -> tuple[pd.DataFrame, np.ndarray]:
-    if not VOICE_CSV.exists():
-        raise FileNotFoundError(
-            f"Fichier introuvable : {VOICE_CSV}\n"
-            "Lance d'abord : python analysis/eda_voice.py"
-        )
-    df = pd.read_csv(VOICE_CSV)
-    if "label_pd" not in df.columns:
-        raise KeyError("Colonne 'label_pd' absente — relance eda_voice.py avec le patch d'export.")
-    available = [f for f in VOICE_FEATS if f in df.columns]
-    missing = set(VOICE_FEATS) - set(available)
-    if missing:
-        print(f"[avertissement] features vocales absentes : {missing}")
-    X = df[available]
-    y = df["label_pd"].to_numpy()
+    X_train, X_test, y_train, y_test = load_voice_data(use_merged=True, normalize=False)
+    # normalize=False car le pipeline fait déjà StandardScaler
+    X = np.vstack([X_train, X_test])
+    y = np.concatenate([y_train, y_test])
     print(f"Dataset vocal  : {X.shape[0]} sujets, {X.shape[1]} features — PD={y.sum()}, HC={(y==0).sum()}")
-    return X, y
+    return pd.DataFrame(X), y
 
 def load_spiral() -> tuple[pd.DataFrame, np.ndarray]:
     """Charge le CSV produit par eda_spiral_uci.py."""
@@ -224,10 +216,9 @@ def main() -> None:
         (results["prob_fusion"] >= 0.5).astype(int),
         OUT_DIR / "confusion_matrix_fusion.png",
     )
-    plot_roc_curves(results, OUT_DIR / "roc_curves_comparison.png")
     plot_feature_importance(
         results["pipe_voice"],
-        [f for f in VOICE_FEATS if f in X_v.columns],
+        [str(i) for i in range(X_v.shape[1])],  # noms génériques 0..44
         "Importance des features – voix",
         OUT_DIR / "feature_importance_voice_model.png",
     )
@@ -237,6 +228,7 @@ def main() -> None:
         "Importance des features – spirale",
         OUT_DIR / "feature_importance_spiral_model.png",
     )
+    plot_roc_curves(results, OUT_DIR / "roc_curves_comparison.png")
 
     # 4. Export métriques JSON (pour la partie hyperparamètres)
     metrics = {
