@@ -28,3 +28,4 @@ print(y.head())
 
 assert not X.empty, "X est vide"
 assert not y.empty, "y est vide"
+

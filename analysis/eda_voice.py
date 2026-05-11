@@ -149,6 +149,19 @@ def main() -> None:
     save_feature_importance(df, "motor_UPDRS")
 
     print(f"\nFigures saved in: {OUTPUT_DIR.resolve()}")
+    
+    # Récupère la colonne subject# depuis le dataframe original complet
+    original = dataset.data.original
+    if "subject#" in original.columns:
+        df_with_subject = df.copy()
+        df_with_subject["subject#"] = original["subject#"].values
+        df_agg = df_with_subject.groupby("subject#").agg("mean").reset_index()
+    else:
+        df_agg = df.copy()
+
+    df_agg["label_pd"] = (df_agg["motor_UPDRS"] > df_agg["motor_UPDRS"].median()).astype(int)
+    df_agg.to_csv(OUTPUT_DIR / "features_per_subject_voice.csv", index=False)
+    print(f"CSV export : {len(df_agg)} sujets → {OUTPUT_DIR / 'features_per_subject_voice.csv'}")
 
 
 if __name__ == "__main__":
