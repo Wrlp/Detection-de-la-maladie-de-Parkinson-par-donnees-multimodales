@@ -1,17 +1,20 @@
 {
-  "cross_val": {
-    "voice": {
-      "mean": 0.9986126338871552,
-      "std": 0.0015665383157634145
-    },
-    "spiral": {
-      "mean": 0.95625,
-      "std": 0.03617449032121945
-    }
+  "voix": {
+    "best_params": "{'clf__max_depth': None, 'clf__min_samples_split': 5, 'clf__n_estimators': 300}",
+    "best_cv_score": 0.9969347292923383,
+    "cv_roc_auc": "0.997 ± 0.005",
+    "test_auc": 1.0,
+    "test_pr_auc": 1.0000000000000004,
+    "cv_precision": 0.9728306022945677,
+    "cv_recall": 0.9943748897901605
   },
-  "holdout": {
-    "auc_voice": 0.9997891540861937,
-    "auc_spiral": 0.921875,
-    "auc_fusion": 0.9988771614641815
+  "spirale": {
+    "best_params": "{'clf__max_depth': 10, 'clf__min_samples_split': 2, 'clf__n_estimators': 100}",
+    "best_cv_score": 0.99,
+    "cv_roc_auc": "0.990 ± 0.020",
+    "test_auc": 0.8974358974358975,
+    "test_pr_auc": 0.9751850713389175,
+    "cv_precision": 0.9636363636363636,
+    "cv_recall": 1.0
   }
 }

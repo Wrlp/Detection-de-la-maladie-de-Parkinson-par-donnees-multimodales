@@ -124,7 +124,7 @@ def save_feature_importance(df: pd.DataFrame, target: str) -> None:
 
 
 def main() -> None:
-    dataset = fetch_ucirepo(id=189)
+    dataset = fetch_ucirepo(id=174) # ici avant 189 regression maintenant classification native label = "status"
     features = dataset.data.features.copy()
     targets = dataset.data.targets.copy()
     df = pd.concat([features, targets], axis=1)
@@ -145,21 +145,25 @@ def main() -> None:
 
     save_missingness_plot(df, "missingness_voice.png")
     save_correlation_heatmap(df, "correlation_voice.png")
-    save_target_relationships(df, ["motor_UPDRS", "total_UPDRS"])
-    save_feature_importance(df, "motor_UPDRS")
+    #save_target_relationships(df, ["motor_UPDRS", "total_UPDRS"])
+    #save_feature_importance(df, "motor_UPDRS")
+    save_target_relationships(df, ["status"])
+    save_feature_importance(df, "status")
+
 
     print(f"\nFigures saved in: {OUTPUT_DIR.resolve()}")
     
     # Récupère la colonne subject# depuis le dataframe original complet
     original = dataset.data.original
-    if "subject#" in original.columns:
+    if "name" in original.columns: #avant "subject#" 
         df_with_subject = df.copy()
-        df_with_subject["subject#"] = original["subject#"].values
-        df_agg = df_with_subject.groupby("subject#").agg("mean").reset_index()
+        df_with_subject["subject"] = original["name"].values #avant "subject#"
+        df_agg = df_with_subject.groupby("subject").agg("mean").reset_index() #avant "subject#"
     else:
         df_agg = df.copy()
 
-    df_agg["label_pd"] = (df_agg["motor_UPDRS"] > df_agg["motor_UPDRS"].median()).astype(int)
+    #df_agg["label_pd"] = (df_agg["motor_UPDRS"] > df_agg["motor_UPDRS"].median()).astype(int)
+    df_agg = df_agg.rename(columns={"status": "label_pd"})
     df_agg.to_csv(OUTPUT_DIR / "features_per_subject_voice.csv", index=False)
     print(f"CSV export : {len(df_agg)} sujets → {OUTPUT_DIR / 'features_per_subject_voice.csv'}")
 

@@ -59,7 +59,7 @@ class VoiceDataset:
             raise FileNotFoundError(f"Fichier test non trouvé: {test_file}")
         
         # Charger les données
-        print(f"📥 Chargement du dataset {'FUSIONNÉ' if use_merged else 'ORIGINAL'}...")
+        print(f"Chargement du dataset {'FUSIONNÉ' if use_merged else 'ORIGINAL'}...")
         df_train = pd.read_csv(train_file, header=None)
         df_test = pd.read_csv(test_file, header=None)
         
@@ -82,6 +82,7 @@ class VoiceDataset:
     
     def _normalize(self):
         """Normaliser les données avec StandardScaler"""
+        self.scaler = StandardScaler() # Ajout 
         self.X_train = self.scaler.fit_transform(self.X_train)
         self.X_test = self.scaler.transform(self.X_test)
     
@@ -136,7 +137,7 @@ class VoiceDataset:
     def info(self) -> str:
         """Retourner les informations du dataset sous forme de string"""
         if self.X_train is None:
-            return "❌ Dataset non chargé. Appelez load() d'abord."
+            return "Dataset non chargé. Appelez load() d'abord."
         
         dist = self.get_class_distribution()
         info_str = f"""
