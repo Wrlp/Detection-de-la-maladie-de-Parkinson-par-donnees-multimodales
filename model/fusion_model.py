@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import joblib
+import pickle
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import (
@@ -477,6 +478,14 @@ def main() -> None:
     }, OUT_DIR / "model_fusion.joblib")
 
     print("Modèle sauvegardé : model_fusion.joblib")
+
+    with open(OUT_DIR / "model_fusion.pkl", "wb") as f:
+        pickle.dump({
+            "pipe_voice":  results['voix']['pipe'],
+            "pipe_spiral": results['spirale']['pipe'],
+        }, f)
+
+    print("Modèle sauvegardé : model_fusion.pkl")
     print("\nTerminé. Figures dans :", OUT_DIR.resolve())
 
 if __name__ == "__main__":
