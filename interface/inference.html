@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inférence</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="site-title">Parkinson Detection Dashboard</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="results.html">Résultats</a>
+    <a href="inference.html" class="active">Inférence</a>
+    
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Lancer une prédiction</h1>
+  <div class="card">
+    <input type="file" id="fileInput" accept=".csv,.wav">
+    <button class="btn" onclick="simulatePrediction()">Lancer la prédiction</button>
+    <div id="predictionResult" class="result"></div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

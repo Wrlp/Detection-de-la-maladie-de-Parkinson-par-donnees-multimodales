@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résultats d'entraînement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="site-title">Parkinson Detection Dashboard</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="results.html" class="active">Résultats</a>
+    <a href="inference.html">Inférence</a>
+    
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Résultats d'entraînement</h1>
+  <div class="grid">
+    <div class="card"><img src="assets/results/accuracy.png" alt="Accuracy"><h3>Accuracy Curve</h3><p>Courbe de précision du modèle.</p></div>
+    <div class="card"><img src="assets/results/loss.png" alt="Loss"><h3>Loss Curve</h3><p>Évolution de la fonction de perte.</p></div>
+    <div class="card"><img src="assets/results/confusion_matrix.png" alt="Confusion Matrix"><h3>Confusion Matrix</h3><p>Matrice de confusion.</p></div>
+    <div class="card"><img src="assets/results/roc_curve.png" alt="ROC Curve"><h3>ROC Curve</h3><p>Courbe ROC du classifieur.</p></div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

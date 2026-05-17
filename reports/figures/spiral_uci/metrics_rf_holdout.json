@@ -1,5 +1,5 @@
 {
-  "roc_auc_holdout": 0.921875,
+  "roc_auc_holdout": 0.9375,
   "n_train": 57,
   "n_test": 20,
   "classification_report": {
