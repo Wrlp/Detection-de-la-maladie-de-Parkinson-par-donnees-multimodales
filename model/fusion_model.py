@@ -45,6 +45,7 @@ def load_voice() -> tuple[pd.DataFrame, np.ndarray]:
     # normalize=False car le pipeline fait déjà StandardScaler
     X = np.vstack([X_train, X_test])
     y = np.concatenate([y_train, y_test])
+    print("Doublons dans X vocal :", pd.DataFrame(X).duplicated().sum())
     print(f"Dataset vocal  : {X.shape[0]} sujets, {X.shape[1]} features — PD={y.sum()}, HC={(y==0).sum()}")
     return pd.DataFrame(X), y
 
